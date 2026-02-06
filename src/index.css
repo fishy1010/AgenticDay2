@@ -77,29 +77,57 @@ body {
 }
 .btn {
   border: 0.2rem solid #4d4d4d;
+  background-color: #fff;
+  color: #1a1a1a;
   cursor: pointer;
   padding: 0.8rem 1rem 0.7rem;
   text-transform: capitalize;
+  transition:
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    color 0.15s ease-in-out,
+    transform 0.05s ease-in-out;
+}
+.btn:hover {
+  background-color: #f2f2f2;
+}
+.btn:active {
+  transform: translateY(1px);
 }
 .btn.toggle-btn {
   border-color: #d3d3d3;
   border-width: 1px;
+  background-color: #f8f8f8;
 }
 .btn.toggle-btn[aria-pressed="true"] {
-  border-color: #4d4d4d;
-  text-decoration: underline;
+  background-color: #e1ecff;
+  border-color: #1f6feb;
+  color: #0f2f66;
+  font-weight: 600;
+}
+.btn.toggle-btn:hover {
+  background-color: #edf3ff;
 }
 .btn__danger {
-  background-color: #ca3c3c;
-  border-color: #bd2130;
+  background-color: #c62828;
+  border-color: #a81f1f;
   color: #fff;
+}
+.btn__danger:hover {
+  background-color: #b71c1c;
+  border-color: #941717;
 }
 .btn__filter {
   border-color: lightgrey;
 }
 .btn__primary {
-  background-color: #000;
+  background-color: #1f6feb;
+  border-color: #1a5fd0;
   color: #fff;
+}
+.btn__primary:hover {
+  background-color: #1a5fd0;
+  border-color: #1550b6;
 }
 .btn-group {
   display: flex;
