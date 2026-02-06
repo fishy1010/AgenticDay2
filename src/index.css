@@ -109,13 +109,13 @@ body {
   background-color: #edf3ff;
 }
 .btn__danger {
-  background-color: #c62828;
-  border-color: #a81f1f;
+  background-color: #1f6feb;
+  border-color: #1a5fd0;
   color: #fff;
 }
 .btn__danger:hover {
-  background-color: #b71c1c;
-  border-color: #941717;
+  background-color: #1a5fd0;
+  border-color: #1550b6;
 }
 .btn__filter {
   border-color: lightgrey;
